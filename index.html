@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover PoC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 40px;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            background-color: #161b22;
+            box-shadow: 0 0 25px rgba(88, 166, 255, 0.15);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #8b949e;
+            line-height: 1.6;
+        }
+        .hck-name {
+            color: #ff7b72;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #484f58;
+            border-top: 1px solid #30363d;
+            padding-top: 15px;
+        }
+        
+        .blink {
+            animation: blinker 2s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="blink">404 NOT FOUND?</h1>
+        <h1>NO, SUBDOMAIN TAKEOVER!</h1>
+        <p>This subdomain has been successfully claimed as a <br> <strong>Proof of Concept</strong>.</p>
+        <p>Secured by: <span class="hck-name">[Mr. X]</span></p>
+        
+        <div class="footer">
+            <p>This page is non-malicious and created Domain/SubDomain take over PoC.</p>
+        </div>
+    </div>
+</body>
+</html>
